@@ -1,0 +1,32 @@
+<form (ngSubmit)="save()">
+    <div class="form-group">
+        <div class="row" *ngFor="let editData of service.baseInfoTitle; let i=index">
+            <label [for]="service.baseInfoTitle[i]">{{service.baseInfoTitle[i]}}:</label>
+            <input [value]="" (blur)="getInput($event, i)" required class="form-control" name="service.baseInfoTitle[i]">
+            
+        </div>
+
+        <button type="submit" class="btn btn-default">保存</button>
+        <button class="btn btn-default" (click)="cancel()">取消</button>
+
+
+        <!-- <label for="testform">testform:</label>
+        <input class="form-control" name="testform" type="text" ngControl="testform"
+        id="testform" #testform="ngControl" required>
+        <div [hidden]="testform.valid || testform.pristine"
+            class="alert alert-danger">
+            testform is required
+        </div> -->
+        
+
+    </div>
+</form>
+
+<!-- <div *ngFor="let item of service.test; let i=index">
+    <input [value]="service.test[i]" (blur)="shuru($event,item,i)"/>
+    {{service.test[i]}}
+</div> -->
+
+<!-- 
+<input [(ngModel)]="service.ttest" name="456">
+{{service.ttest}} -->

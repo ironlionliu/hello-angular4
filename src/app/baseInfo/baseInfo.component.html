@@ -1,0 +1,36 @@
+<div class="factory-container">
+    <div class="container">
+        <div class="row">
+            <form class="navbar-form navbar-left" role="search">
+                <div class="col-md-6 form-group">
+                    <input type="search" class="form-control" placeholder="搜索">
+                </div>
+                <button type="submit" class="btn btn-default">搜索</button>
+                <button class=“col-md-3” type="" class="btn btn-default" (click)="delete()">删除</button>
+                <button class=“col-md-3” type="" class="btn btn-default" (click)="add()">增加</button>
+            </form>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <input class="col-md-2 mychecked" type="checkbox" (click)="checkAll()">
+            <div class="col-md-2 label label-default" *ngFor="let Title of service.baseInfoTitle">
+                {{Title}}
+            </div>
+        </div>
+
+
+        <div class="row" *ngFor="let baseInfoData of service.baseInfoData; let i=index">
+            <input class="col-md-2 mychecked" type="checkbox" [(checked)]="baseInfoData.checked" (click)="checkOne(baseInfoData,i)">
+            <div class="col-md-2 label label-info" *ngFor="let data of baseInfoData.data" (click)="edit(baseInfoData,i)">
+                {{data}}
+            </div>
+           
+        </div>
+    </div>
+</div>
+
+
+<button (click)="testhttp()">获得json</button>
+
+<!-- <router-outlet></router-outlet> -->

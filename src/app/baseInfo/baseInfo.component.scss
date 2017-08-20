@@ -1,0 +1,32 @@
+.factory-container {
+    width: 1000px;
+    .container {
+        width: 1000px;
+        padding: 10px;
+        border-top: 1px solid #d9d9d9;
+        background-color: #ffffff;
+        >div>div{
+            height: 40px;
+            line-height: 40px;
+        }
+    }
+}
+
+.toolbar{
+    width: 1000px;
+    height: 30px;
+}
+.label-default{
+    margin: 3px;
+}
+.label-info{
+    margin: 3px;
+}
+
+.mychecked{
+    position: relative;
+    left: 130px;
+    top: 15px;
+}
+
+

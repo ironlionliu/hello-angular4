@@ -1,0 +1,62 @@
+.main-nav {
+    background: #6f5499;
+    height: 50px;
+    min-height: 50px;
+    padding: 0;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.24);
+    
+}
+
+.logo-container{
+    margin-right: 25px;
+    display: inline-block;
+    line-height: 100%;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+}
+.logo-container .logo-img {
+    margin-top: 5px;
+    height: 40px;
+}
+
+.navbar-toggle {
+    .icon-bar {
+        background-color: #fff;
+    }
+}
+
+.nav > li > a {
+    color: #fff;
+}
+
+.nav > li.active,
+.nav > li > a:hover,
+.nav > li > a:focus,
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
+    color: #fff;
+    background-color: #777;
+}
+
+.navbar-brand-my {
+    color: #fff;
+}
+
+
+.main-container {
+    padding-top: 80px;
+    min-height: 800px;
+}
+
+.footer {
+    text-align: left;
+    padding: 40px 48px;
+    background: #263138;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
